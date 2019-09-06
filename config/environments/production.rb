@@ -93,6 +93,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  config.action_cable.disable_request_forgery_protection = true
-  config.action_cable.allowed_request_origins = ['https://message-me-gt.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://message-me-gt.herokuapp.com/']
 end
