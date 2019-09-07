@@ -93,6 +93,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   
-  config.web_socket_server_url = "wss://message-me-gt.herokuapp.com/"
+ 
+  config.action_cable.url = "wss://message-me-gt.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = [ 'https://message-me-gt.herokuapp.com'], /http:\/\/message-me-gt.herokuapp.com.*/
  
 end
